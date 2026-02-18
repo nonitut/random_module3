@@ -1,0 +1,53 @@
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background: lemonchiffon;
+}
+
+.popup{
+    position: fixed;
+    background: lavenderblush;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-10vw);
+    animation: fadein 0.8s ease-in-out forwards;
+    z-index: 1000;
+}
+
+.content_popup{
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+    width: 30vw;
+    text-align: center;
+}
+
+.close{
+    font-size: 2vw;
+    position: absolute;
+    right: 1vw;
+    cursor: pointer;
+}
+
+@keyframes fadein{
+    0%{ opacity: 0; transform: translateY(-10vw);}
+    100%{ opacity: 1; transform: translateY(0vw);}
+}
+
+
+.container{
+    display: flex;
+    gap: 2vw;
+    margin: 2vw auto;
+}
+
+.box{
+   width: 10vw;
+   height: 15vw;
+   border: 1px dashed darkblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
